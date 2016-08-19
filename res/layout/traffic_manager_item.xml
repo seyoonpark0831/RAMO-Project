@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/ti_appicon"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ti_appicon" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			
+            <TextView
+			        android:id="@+id/ti_appname"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Application Name"
+			        android:textColor="@android:color/black"
+			        android:textStyle="bold"
+			        android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+	            android:id="@+id/ti_apptraffic"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Total Up : 20Mb / Down : 53Mb"
+	            android:textColor="@android:color/black"
+	            android:textSize="20sp" />
+            
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/ti_mobile_up_traffic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="200Mb"
+                android:textSize="12sp"
+                android:textColor="@android:color/holo_green_light" />
+
+            <TextView
+                android:id="@+id/ti_mobile_down_traffic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="50MB"
+                android:textSize="12sp"
+                android:textColor="@android:color/holo_green_light" />
+            
+            <TextView
+                android:id="@+id/ti_wifi_up_traffic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="200Mb"
+                android:textSize="12sp"
+                android:textColor="@android:color/holo_orange_light" />
+
+            <TextView
+                android:id="@+id/ti_wifi_down_traffic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="50MB"
+                android:textSize="12sp"
+                android:textColor="@android:color/holo_orange_light" />
+            
+        </TableRow>
+        
+    </TableLayout>
+    
+    
+    
+
+</RelativeLayout>
